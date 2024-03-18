@@ -4,6 +4,7 @@ body{
     background-color: #010101;
     font-family:'inter',sans-serif;
     color: #fefefe;
+    scroll-snap-type: y mandatory;
 }
 
 nav{
@@ -60,6 +61,7 @@ section{
     padding: 70px 80px;
     display: flex;
     align-items: center;
+    scroll-snap-align: start; 
 }
 
 .section-white{
@@ -81,6 +83,15 @@ section{
     color: #fefefe;
     text-decoration: none;
 }
+
+nav.nav-white .nav-items {
+    color: #010101; /* Couleur du texte pour la navigation en fond blanc */
+}
+
+nav.nav-white hr {
+    border-top: 1px solid #010101; /* Couleur de la ligne pour la navigation en fond blanc */
+}
+  
 
 /* --------- FOOTER --------- */
 

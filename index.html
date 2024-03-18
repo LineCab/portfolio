@@ -27,10 +27,10 @@
         <hr>
     </nav>
     
-    <section>
+    <section  class="section-black" id="accueil">
         <h1>Line Cabaret</h1>
     </section>
-    <section class="section-white">
+    <section class="section-white" id="presentation">
         <div class="row">
             <div class="img-presentation">
                 <div class="shadow"></div>
@@ -43,7 +43,7 @@
             </div>
         </div>
     </section>
-    <section class="projets-accueil">
+    <section class="section-black projets-accueil" id="projets">
         <div class="col">
             <h2>Projets</h2>
             <div class="row-projets">
@@ -74,7 +74,7 @@
             </div>
         </div>
     </section>
-    <section class="section-white contact">
+    <section class="section-white contact" id="contact">
         <p class="code-bar code-bar-contact">e oifhuihd yehp iougygdcausq duizagbazij</p>
         <div class="row">
             <div class="p-contact">
@@ -112,5 +112,53 @@
             <!-- <a class="link-footer" href="/contact.html">Contact</a> -->
         </div>
     </footer>
+    
+    <script src="/js/navigation.js"></script>
+
 </body>
 </html>
+
+<script>
+
+    const sections = document.querySelectorAll('section');
+    const nav = document.querySelector('nav');
+    const hr = document.querySelector('hr');
+
+    // Fonction pour déterminer la section actuellement visible
+    function getCurrentSection() {
+        let currentSection = null;
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionBottom = sectionTop + section.offsetHeight;
+            const scrollPosition = window.scrollY + nav.offsetHeight + 1; // Prend en compte la hauteur de la navigation
+            if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                currentSection = section;
+            }
+        });
+        return currentSection;
+    }
+
+    // Fonction pour mettre à jour le style de navigation
+    function updateNavStyle() {
+        const currentSection = getCurrentSection();
+        if (currentSection) {
+            if (currentSection.classList.contains('section-white')) {
+                nav.classList.add('nav-white');
+                hr.classList.add('hr-white');
+            } else {
+                nav.classList.remove('nav-white');
+                hr.classList.remove('hr-white');
+            }
+        }
+    }
+
+    // Écouter l'événement de défilement pour mettre à jour le style de navigation
+    window.addEventListener('scroll', updateNavStyle);
+
+    // Mettre à jour le style de navigation au chargement de la page
+    updateNavStyle();
+
+
+
+
+</script>
