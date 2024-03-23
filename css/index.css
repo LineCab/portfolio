@@ -39,6 +39,34 @@ p{
     line-height: 1.5;
 }
 
+.bold{
+    font-weight: 700;
+}
+
+.red{
+    color: #FF3737;
+}
+
+.green{
+    color: #0B6F21;
+}
+
+.yellow{
+    color: #ccb048;
+}
+
+.blue{
+    color: #a9cfe9;
+}
+
+.darkblue{
+    color: #5A9FC6;
+}
+
+.brown{
+    color: #5A3A31;
+}
+
 .code-bar{
     font-family: "Libre Barcode 39 Text", system-ui;
     font-size: x-large;
@@ -407,38 +435,100 @@ footer{
 
 /* --------- Projets --------- */
 
-.card-projet{
+.title-categorie{
+    position: absolute;
+    top: 20px; /* Ajustez la valeur selon vos besoins pour définir la distance depuis le haut de la fenêtre */
+    left: 5; /* Pour centrer horizontalement */
+    transform: translateX(-50%);
+    z-index: 999; /* Assurez-vous que le titre est au-dessus du carousel */
+    background-color: white; /* Arrière-plan blanc pour contraster avec le contenu */
+    padding: 10px 20px; /* Espacement interne */
+    border-radius: 5px;
+}
+
+.container {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.carousel-inner{
+    display: flex;
+}
+
+.project {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding: 50px;
+}
+
+.carousel-prev,
+.carousel-next {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #192025;
+    color: #c3c6ce;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+.carousel-prev-white, .carousel-next-white{
+    background-color: #c3c6ce;
+    color: #192025;
+}
+
+.card-projet {
     border: solid 1px #323F48;
     border-radius: 10px;
     max-width: 455px;
     height: fit-content;
+    margin: 0 20px;
 }
 
-.card-projet img{
+.card-projet img {
     border-radius: 10px;
     max-width: 420px;
     height: auto;
     margin: 18px;
 }
 
-.taille-projets{
-    max-width: 600px;
+.p-presentation {
+    width: 600px;
 }
 
-.taille-projets p{
+.p-presentation p {
     margin-right: 60px;
+    overflow-wrap: break-word;
 }
 
 .cta {
     width: fit-content;
-    margin-left: 410px;
+    margin-left: 210px;
     position: relative;
     margin-top: 40px;
     padding: 12px 18px;
     transition: all 0.2s ease;
     cursor: pointer;
 }
-  
+
 .cta:before {
     content: "";
     position: absolute;
@@ -482,19 +572,7 @@ footer{
     transform: scale(0.95);
 }
 
-.cta-white:before {
-    background: #706d59;
-}
-
-.cta-white span{
-    color: #fefefe;
-}
-
-.cta-white svg{
-    stroke: #fefefe;
-}
-
-.projets h2{
+.projets h2 {
     margin-bottom: 10px;
     margin-left: 135px;
 }
