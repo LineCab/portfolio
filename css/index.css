@@ -86,10 +86,7 @@ hr {
 
 section{
     height: calc(100vh - 49px);
-    padding: 70px 80px;
-    display: flex;
-    align-items: center;
-    scroll-snap-align: start; 
+    padding: 120px 80px;
 }
 
 .section-white{
@@ -97,7 +94,10 @@ section{
     color: #010101;
     justify-content: center;
 }
-
+.section-title{
+    display: flex;
+    align-items: center;
+}
 /* --------- HEADER --------- */
 
 .nav-container{
@@ -450,6 +450,7 @@ footer{
     overflow: hidden;
     display: flex;
     align-items: center;
+    scroll-snap-align: start; 
 }
 
 .carousel {
