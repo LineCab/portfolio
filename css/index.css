@@ -15,7 +15,7 @@ nav{
 
 h1{
     font-family: "Plaster", system-ui;
-    font-size: clamp(70px, 8vw, 155px);
+    font-size: clamp(50px, 8vw, 155px);
     font-weight: 400;
     font-style: normal;
     width: 770px;
@@ -669,17 +669,24 @@ footer{
 /***************************************/
 
 @media only screen and (max-width: 600px) {
+    h1{
+        font-size: clamp(30px, 8vw, 75px);
+        width: 40vw;
+    }
     section{
         padding: 0;
         margin: 0;
         height: fit-content;
         min-height: 80vh;
+        width: 100vw;
     }
     nav{
         backdrop-filter: blur(7px);
+        width: 100%;
     }
     .nav-container{
         justify-content: center;
+        padding: 20px 0 0 0;
         gap: 10vw;
     }
     .row{
@@ -703,14 +710,11 @@ footer{
     }
     .img-presentation{
         margin: auto;
-        width: 200px;
-        height: 300px;
+        width: 80vw;
+        height: auto;
     }
     .shadow{
-        bottom: 30px;
-        right: -15px;
-        height: 55px;
-        border-radius: 8px;
+        display: none;
     }
     .ligne-presentation{
         display: none;
@@ -808,34 +812,29 @@ footer{
         justify-content: center;
     }
     .bloc-contact{
+        width: 100%;
         display: flex;
         flex-direction: column;
-        width: 100%;
+        
         align-items: center;
         gap: 45px;
     }
     
     .bloc{
-        width: 55vw;
-        height: 3vh;
-        /* border-radius: 10px;
-        background-color: #F3F3F3;
-        padding: 23px;
-        display: flex;
-        align-items: center;
-        gap: 30px; */
+        padding: 20px 0;
+        width: 100%;
+        height: fit-content;
         transition: none;
         box-shadow: none;
+        flex-direction: column;
     }
-    
-    .bloc:hover{
-        box-shadow: inset 0 -100px 0 0 #72818C;
-        color: #F3F3F3;
-        transform: scale(1.03);
+    .bloc p {
+        width: 60vw;
+        word-wrap: break-word;
+        text-align: center;
     }
-    
-    .bloc:hover .icon-blanc{
-        z-index: 0;
+    .bloc img{
+        width: 10vw;
     }
     
     .icon-cv{
@@ -858,5 +857,30 @@ footer{
         position: absolute;
         width: fit-content;
         transform: translate(-50%, -50%) rotate(90deg);
+    }
+
+    
+    /* --------- FOOTER --------- */
+
+    footer{
+        padding: 60px 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    footer p{
+        word-wrap: break-word;
+    }
+    .titre-footer{
+        font-size: 2rem;
+    }
+
+    .nav-footer{
+        gap: 8px;
+        flex-direction: column;
+    }
+
+    .link-footer {
+        padding: 15px 10px;
+        font-size: 16px;
     }
 }
