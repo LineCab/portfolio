@@ -12,6 +12,10 @@ body {
     overflow-x: hidden;
 }
 
+a{
+    cursor: pointer;
+}
+
 .sousTitre{
     display: flex;
     flex-direction: column;
@@ -185,7 +189,6 @@ body {
     align-items: center;
     position: relative;
     overflow: hidden;
-    cursor: pointer;
 }
 
 .lien p {
@@ -217,7 +220,7 @@ body {
 
 /* ---- Section frise chronologique ---- */
 
-.sectionEtudes{
+#sectionEtudes{
     height: 80vh;
     padding: 5vh 0;
 }
@@ -283,7 +286,7 @@ body {
 
 /* ---- Section Soft Skills ---- */
 
-.skills{
+#skills{
     display: flex;
     flex-direction: column;
     gap: 5vh;
@@ -424,7 +427,7 @@ body {
 
 /* ---- Section infographies ---- */
 
-.infographies{
+#infographies{
     position: relative;
     width: 100%;
     height: 70vh;
@@ -480,7 +483,7 @@ body {
 
 /* ---- Section vidéos ---- */
 
-.videos{
+#videos{
     display: flex;
     width: 100%;
     align-items: flex-start;
