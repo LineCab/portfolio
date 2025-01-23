@@ -286,7 +286,7 @@ a{
 
 /* ---- Section Soft Skills ---- */
 
-#skills{
+.skills{
     display: flex;
     flex-direction: column;
     gap: 5vh;
