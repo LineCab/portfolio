@@ -1,0 +1,325 @@
+@media screen and (max-width: 500px) {
+    body {
+        padding: 0 5vw;
+    }
+
+    .sousTitre p{
+        font-size: 40px;
+    }
+
+    .sousTitreG{
+        font-size: 52px;
+    }
+
+    .sousTitreD{
+        font-size: 52px;
+    }
+
+    .titreMobile{
+        font-size: 48px;
+    }
+
+
+    /* ---- Section accueil ---- */
+
+    .accueil{
+        height: 100vh;
+        padding: 0 0;
+        justify-content: center;
+        gap: 20vh;
+        align-items: end;
+    }
+
+    .titre{
+        margin-top: 0;
+        width: 100%;
+        gap: 1vh;
+    }
+
+    .h1metier {
+        font-size: 60px;
+    }
+
+    .h1portfolio{
+        font-size: 52px;
+    }
+
+    .titreNom{
+        padding: 12px 16px;
+    }
+
+    .h1nom{
+        font-size: 40px;
+    }
+
+    .btnLinkedin{
+        display: flex;
+        width: 40vw;
+        padding: 12px 24px;
+    }
+
+    .btnLinkedin img{
+        width: 5vw;
+    }
+
+    .btnLinkedin p{
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+
+    /* ---- Section sommaire ---- */
+
+    .sectionSommaire{
+        height: fit-content;
+    }
+
+    .flexLigne{
+        flex-direction: column;
+    }
+
+    .photoLine{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 4px;
+    }
+
+    .photoLine img{
+        height: 42vh;
+    }
+
+    .photoWeb{
+        font-size: 32px;
+    }
+
+    .photoDesign{
+        font-size: 32px;
+    }
+
+    .photoLine p{
+        font-size: 20px;
+    }
+
+    .sommaire{
+        width: 90vw;
+        gap: 5vh;
+    }
+
+    .sommaire p{
+        font-size: 24px;
+    }
+
+    .lien {
+        height: 4vh;
+    }
+
+    .lien p {
+        font-size: 20px;
+    }
+
+    .lien img{
+        width: 5vw;
+    }
+
+
+    /* ---- Section frise chronologique ---- */
+
+    #sectionEtudes{
+        height: fit-content;
+    }
+
+    .frise{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 3vh;
+        margin-top: 5vh;
+    }
+
+    .friseDesktop{
+        display: none;
+    }
+
+    .friseMobile{
+        display: block;
+        height: max-content;
+        margin-top: 10px;
+    }
+
+    .colonnesEtude{
+        flex-direction: column;
+        gap: 10vh;
+    }
+
+    .colonneEtude{
+        gap: 3vh;
+        min-width: none;
+        width: 100%;
+    }
+
+    .titreColonne{
+        max-width: none;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .customListe li {
+        font-size: 20px;
+    }
+
+    /* ---- Section Soft Skills ---- */
+
+    .skills{
+        margin-bottom: 8vh;
+    }
+
+    .petit{
+        font-size: 40px;
+    }
+
+    .qualites{
+        justify-content: center;
+        gap: 1.5vw;
+        width: 100%;
+    }
+
+    .qualite{
+        height: 3vh;
+        padding: 12px 16px;
+        gap: 12px;
+    }
+
+    .qualite p{
+        font-size: 20px;
+    }
+
+    .qualite img{
+        height: 3vh;
+    }
+
+    .competences{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 6vw;
+        width: 100%;
+    }
+
+    .competence{
+        width: 100px;
+        gap: 3vw;
+    }
+
+    .competence img{
+        width: 15vw;
+    }
+
+
+    /* ---- Section sites web: ---- */
+
+    .sectionProjets{
+        height: fit-content;
+    }
+
+    .sitesWeb {
+        margin-top: 8vh;
+        width: fit-content;
+        gap: 10vw;
+    }
+
+    .projet{
+        width: 90vw;
+        gap: 18px;
+    }
+
+    .projet img{
+        width: 100%;
+    }
+
+    .numero{
+        font-size: 52px;
+    }
+
+    .description{
+        font-size: 20px;
+    }
+
+    .projet a{
+        font-size: 20px;
+    }
+
+
+    /* ---- Section infographies ---- */
+
+    #infographies{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 10vh;
+    }
+
+    .colloque{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        margin-top: 5vh;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .beeGuard{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 24px;
+        margin-top: 0;
+        width: 100%;
+        position: relative;
+        height: fit-content;
+    }
+
+    .infoTexte{
+        width: 100%;
+    }
+
+    .infoTitre{
+        font-size: 28px;
+    }
+
+    .infoTexte p{
+        font-size: 18px;
+        width: 100%;
+    }
+
+    /* ---- Section vidéos ---- */
+
+    #videos{
+        flex-direction: column;
+        width: 100%;
+        gap: 10vh;
+    }
+
+
+    /* ---- Section remerciement ---- */
+
+    .remerciement{
+        height: 90vh;
+    }
+
+    .merci{
+        font-size: 72px;
+    }
+
+    .texteMerci p{
+        font-size: 20px;
+    }
+
+    .décorationMerci{
+        position: absolute;
+        top: 5vh;
+        right: 0;
+    }
+}

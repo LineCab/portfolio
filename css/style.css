@@ -24,14 +24,14 @@ a{
 }
 
 .sousTitre p{
-    font-size: 60px;
+    font-size: 52px;
     font-weight: 400;
     line-height: 0.8;
     letter-spacing: -3px;
 }
 
 .sousTitreG{
-    font-size: 80px;
+    font-size: 64px;
     font-weight: 300;
     line-height: normal;
     letter-spacing: -4px;
@@ -39,7 +39,7 @@ a{
 }
 
 .sousTitreD{
-    font-size: 80px;
+    font-size: 64px;
     font-weight: 700;
     line-height: normal;
     letter-spacing: -3px;
@@ -54,7 +54,6 @@ a{
     flex-direction: column;
     padding: 10vh 0;
     justify-content: space-between;
-    gap: 2vh;
     align-items: center;
 }
 
@@ -62,17 +61,18 @@ a{
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 8vh;
 }
 
 .h1metier {
     line-height: 0.9;
-    font-size: 155px;
+    font-size: 120px;
     font-weight: 100;
 }
 
 .h1portfolio{
     line-height: 0.9;
-    font-size: 140px;
+    font-size: 100px;
     font-weight: 700;
 }
 
@@ -86,7 +86,7 @@ a{
 
 .h1nom{
     color: var(--blanc);
-    font-size: 72px;
+    font-size: 52px;
     font-style: italic;
     font-weight: 400;
 }
@@ -116,7 +116,7 @@ a{
 /* ---- Section sommaire ---- */
 
 .sectionSommaire{
-    height: 100vh;
+    height: 90vh;
     padding: 5vh 0;
     display: flex;
     flex-direction: column;
@@ -136,15 +136,19 @@ a{
     gap: 4px;
 }
 
+.photoLine img{
+    height: 55vh;
+}
+
 .photoWeb{
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 300;
     text-transform: uppercase;
 }
 
 .photoDesign{
     color: var(--vert);
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -163,7 +167,7 @@ a{
 }
 
 .sommaire p{
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -232,6 +236,10 @@ a{
     margin-top: 10vh;
 }
 
+.friseMobile{
+    display: none;
+}
+
 .colonnesEtude{
     display: flex;
     gap: 4vw;
@@ -253,7 +261,7 @@ a{
 }
 
 .titreColonne p{
-    font-size: 35px;
+    font-size: 28px;
     font-weight: 600;
     letter-spacing: -0.35px;
 }
@@ -268,7 +276,7 @@ a{
     display: flex;
     align-items: center;
     gap: 2vw;
-    font-size: 28.5px;
+    font-size: 24px;
     font-weight: 400;
     position: relative;
     margin-bottom: 4vh;
@@ -320,7 +328,7 @@ a{
 }
 
 .qualite p{
-    font-size: 34px;
+    font-size: 24px;
     font-weight: 500;
 }
 
@@ -348,12 +356,12 @@ a{
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    gap: 14px;
+    gap: 32px;
 }
 
 .competence{
     display: flex;
-    width: 160px;
+    width: 130px;
     flex-direction: column;
     align-items: center;
     gap: 8px;
@@ -392,7 +400,7 @@ a{
 }
 
 .titreSite{
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 700;
 }
 
@@ -470,7 +478,7 @@ a{
 }
 
 .infoTexte p{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
     width: 28vw;
 }
@@ -492,7 +500,7 @@ a{
 }
 
 
-/* ---- Section vidéos ---- */
+/* ---- Section remerciement ---- */
 
 .remerciement{
     position: relative;

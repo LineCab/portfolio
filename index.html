@@ -6,6 +6,7 @@
     <title>Portfolio Line</title>
     <link href="/css/reset.css" rel="stylesheet" type="text/css">
     <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/css/mobile.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -68,11 +69,12 @@
             <p><span class="sousTitreG">Mes</span><span class="sousTitreD">Etudes</span></p>
         </div>
         <div class="frise">
-            <img src="image/flecheEtudes.svg" alt="frise chronologique">
+            <img class="friseDesktop" src="image/flecheEtudes.svg" alt="frise chronologique">
+            <img class="friseMobile" src="image/friseMobile.svg" alt="frise chronologique">
             <div class="colonnesEtude">
                 <div class="colonneEtude">
                     <div class="titreColonne">
-                        <p>Baccalauréat <br> général</p>
+                        <p>Baccalauréat général</p>
                         <span class="anneeColonne">2019-2021</span>
                     </div>
                     <ul class="customListe">
@@ -219,7 +221,7 @@
     </section>
     <section id="sectionInfographies" class="sectionProjets">
         <div class="sousTitre">
-            <p><span class="sousTitreG">Mes</span><span class="sousTitreD">Infographies</span></p>
+            <p><span class="sousTitreG titreMobile">Mes</span><span class="sousTitreD titreMobile">Infographies</span></p>
         </div>
         <div id="infographies">
             <div class="colloque">
@@ -289,33 +291,50 @@
     </section>
 </body>
 <script>
-    const sitesWeb = document.querySelector('.sitesWeb');
-    const flecheGauche = document.querySelector('.fleches img:nth-child(1)');
-    const flecheDroite = document.querySelector('.fleches img:nth-child(2)');
+        const sitesWeb = document.querySelector('.sitesWeb');
+        const flecheGauche = document.querySelector('.fleches img:nth-child(1)');
+        const flecheDroite = document.querySelector('.fleches img:nth-child(2)');
+        let translateXValue = 25;
+        let step = 30;
+        let maxTranslateX = 25;
+        let minTranslateX = -35;
 
-    let translateXValue =25;
-    const step = 30;
-
-    const maxTranslateX = 25;
-    const minTranslateX = -35;
-
-    sitesWeb.style.transform = `translateX(${translateXValue}vw)`;
-
-    flecheDroite.addEventListener('click', () => {
-        if (translateXValue > minTranslateX) {
-            translateXValue -= step;
-            if (translateXValue < minTranslateX) translateXValue = minTranslateX;
+        function adjustValuesForScreenSize() {
+            const windowWidth = window.innerWidth;
+            if (windowWidth <= 500) {
+                translateXValue = 0;
+                step = 100;
+                maxTranslateX = 0;
+                minTranslateX = -300;
+            } else {
+                translateXValue = 25; 
+                step = 30;
+                maxTranslateX = 25;
+                minTranslateX = -35;
+            }
             sitesWeb.style.transform = `translateX(${translateXValue}vw)`;
         }
-    });
 
-    flecheGauche.addEventListener('click', () => {
-        if (translateXValue < maxTranslateX) {
-            translateXValue += step;
-            if (translateXValue > maxTranslateX) translateXValue = maxTranslateX;
-            sitesWeb.style.transform = `translateX(${translateXValue}vw)`;
-        }
-    });
+        adjustValuesForScreenSize();
 
+        flecheDroite.addEventListener('click', () => {
+            if (translateXValue > minTranslateX) {
+                translateXValue -= step;
+                if (translateXValue < minTranslateX) translateXValue = minTranslateX;
+                sitesWeb.style.transform = `translateX(${translateXValue}vw)`;
+            }
+        });
+
+        flecheGauche.addEventListener('click', () => {
+            if (translateXValue < maxTranslateX) {
+                translateXValue += step;
+                if (translateXValue > maxTranslateX) translateXValue = maxTranslateX;
+                sitesWeb.style.transform = `translateX(${translateXValue}vw)`;
+            }
+        });
+
+        window.addEventListener('resize', adjustValuesForScreenSize);
+
+    </script>
 </script>
 </html>
