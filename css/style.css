@@ -9,6 +9,7 @@ body {
     padding: 0 8vw;
     background: var(--blanc);
     color: var(--noir);
+    width: 100vw;
     overflow-x: hidden;
 }
 
