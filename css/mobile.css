@@ -222,6 +222,7 @@
 
     .sectionProjets{
         height: fit-content;
+        overflow-x: hidden
     }
 
     .sitesWeb {
