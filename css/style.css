@@ -552,6 +552,8 @@ a{
 @media screen and (max-width: 1100px) {
     body {
         padding: 0 5vw;
+        width: 100vw;
+        overflow-x: hidden
     }
 
     .sousTitre p{
