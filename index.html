@@ -200,15 +200,22 @@
                 <a href="https://cuisinekitche.osc-fr1.scalingo.io/" target="_blank">Lien vers le site</a>
             </div>
             <div class="projet">
-                <img src="image/bienvu.png" alt="image capture d'écran du site BienVu">
+                <img src="image/drag.png" alt="image capture d'écran du site Drag Bordeaux" style="height: 31vh">
                 <span class="numero">03</span>
-                <span class="titreSite">BineVu</span>
+                <span class="titreSite">Drag Bordeaux</span>
+                <span class="description">Webdocumentaire sur le monde du drag à Bordeaux. (Design en court)</span>
+                <a href="https://dragbdx.netlify.app/" target="_blank">Lien vers le site</a>
+            </div>
+            <div class="projet">
+                <img src="image/bienvu.png" alt="image capture d'écran du site BienVu">
+                <span class="numero">04</span>
+                <span class="titreSite">BienVu</span>
                 <span class="description">Jeu en ligne pour l'évènement de la Baccanight.</span>
                 <a href="https://linecab.github.io/Baccanight/" target="_blank">Lien vers le site</a>
             </div>
             <div class="projet">
                 <img src="image/maddBdx.png" alt="image capture d'écran du site madd Bordeaux">
-                <span class="numero">04</span>
+                <span class="numero">05</span>
                 <span class="titreSite">Madd Bordeaux</span>sectionInfographies
                 <span class="description">Refonte du site du Musée des Arts décoratifs et du Design à Bordeaux.</span>
                 <a href="https://musee-madd.netlify.app/" target="_blank">Lien vers le site</a>
@@ -297,7 +304,7 @@
         let translateXValue = 25;
         let step = 30;
         let maxTranslateX = 25;
-        let minTranslateX = -35;
+        let minTranslateX = -60;
 
         function adjustValuesForScreenSize() {
             const windowWidth = window.innerWidth;
@@ -305,12 +312,12 @@
                 translateXValue = 0;
                 step = 100;
                 maxTranslateX = 0;
-                minTranslateX = -300;
+                minTranslateX = -400;
             } else {
                 translateXValue = 25; 
                 step = 30;
                 maxTranslateX = 25;
-                minTranslateX = -35;
+                minTranslateX = -60;
             }
             sitesWeb.style.transform = `translateX(${translateXValue}vw)`;
         }
