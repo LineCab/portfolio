@@ -203,18 +203,23 @@
     .competences{
         display: flex;
         flex-wrap: wrap;
-        justify-content: start;
+        justify-content: center;
         gap: 6vw;
         width: 100%;
     }
 
     .competence{
         width: 95px;
+        height: 95px;
         gap: 3vw;
     }
 
     .competence img{
         width: 15vw;
+        height: 60px;
+    }
+    .competence p{
+        text-align: center;
     }
 
 
