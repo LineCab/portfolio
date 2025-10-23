@@ -446,6 +446,14 @@ a{
     height: 70vh;
 }
 
+#infographies a{
+    transition: 0.2s;
+}
+
+#infographies a:hover{
+    scale: 1.03;
+}
+
 .colloque{
     display: inline-flex;
     align-items: flex-start;
